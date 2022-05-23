@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM Document Object Model</title>
+	
+</head>
+<body>
+	<ol id="lista"> 
+		<li id="Primero">Como agregar o posicionar los elementos.</li>
+		<li>Como modificar, reemplazar y eliminar los nodos del DOM.</li>
+	</ol>
+	
+	<script>
+		/*var elemento = document.createElement("li"),
+			contenido=document.createTextNode("Nuevo Texto");
+			
+		elemento.appendChild(contenido);
+		//document.body.appendChild(elemento);
+		
+		//var padre=document.getElementById("lista");
+		var elementoPadre=document.getElementsByTagName("li")[0].parentNode,
+			elementoUno=document.getElementsByTagName("li")[0];
+		//elementoPadre.appendChild(elemento); //coloca el nuevo elemento al final
+		elementoPadre.insertBefore(elemento,elementoUno); //coloca el nuevo elemento al principio
+		*/
+		
+		/*var primerElemento=document.getElementById("Primero");
+		//primerElemento.innerHTML="Texto Modificado."; //modificar texto, accede a todo lo de HTML
+		primerElemento.textContent="Texto Modificado 2."; //muestra las etiquetas
+		*/
+		var primerElemento=document.createElement("li"),
+			contenido=document.createTextNode("Nuevo Texto");
+		
+		primerElemento.appendChild(contenido);
+			
+		/*var padre=document.getElementsByTagName("li")[0].parentNode;
+			referencia=document.getElementsByTagName("li")[0];
+		padre.replaceChild(primerElemento, referencia); //reemplazar nodos*/
+		
+		var padre2=document.getElementsByTagName("li")[0].parentNode;
+			referencia2=document.getElementsByTagName("li")[1];
+		padre2.removeChild(referencia2); //eliminar elementos del DOM
+		
+
+		
+	</script>
+</body>
+</html>

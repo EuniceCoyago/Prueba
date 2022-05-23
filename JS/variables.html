@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Variables Locales y Globales</title>
+	
+</head>
+<body>
+	<script>
+		//var x="sistemas"; //variable global
+		function local(){
+			var x="sistemas"; //variable local
+			document.write("Me gusta la carrera de "+x+"<br>");
+		};
+		local();
+		document.write("No me gusta la carrera de "+x+"<br>"); //no tiene acceso a la variable mientras sea local
+	</script>
+</body>
+</html>

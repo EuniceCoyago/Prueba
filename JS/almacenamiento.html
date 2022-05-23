@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Almacenamiento</title>
+	<style>
+		*{
+			font-family: helvetica;
+		}
+	</style>
+	
+	<script>
+		function guardar(){
+			var texto=document.getElementById("textoAGuardar").value;
+			localStorage.setItem("textoAGuardar",texto);
+		}
+		
+		function verDato(){
+			document.getElementById("textoRecuperado").value=localStorage.getItem("textoAGuardar");
+		}
+	</script>
+</head>
+<body>
+	<h1>Almacenamiento Local Con HTML5</h1>
+	<label>Ingrese un texto</label><br>
+	<input type="text" id="textoAGuardar"><br><br>
+	<label>Texto Recuperado</label><br>
+	<input type="text" id="textoRecuperado"><br><br>
+	<input type="button" value="Guardar" onclick="guardar();">
+	<input type="button" value="Ver Datos" onclick="verDato();">
+	
+</body>
+</html>

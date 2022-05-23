@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Tipos de datos y variables</title>
+</head>
+<body>
+	<script>
+		
+		//Linea de comentario
+		/*Bloque 
+		de 
+		comentario*/
+		
+		/*VALORES: Todos los valores son convertidos a bits
+		-> Cada valor(dato) tiene un tipo que determina el rol
+			que juega un valor en nuestro programa.
+		-> JS tiene 6 tipos de datos basicos:
+			NUMEROS, CADENAS, BOOLEANOS, OBJETOS, FUNCIONES E INDEFINIDOS */
+		
+		/*VARIABLES: Almacenan valores que pueden ser utilizados posteriormente.
+		el valor de una variables puede cambiar(variar) durante la ejecucuion del programa. */
+		
+		var almacena = 10+12; 
+		/*var permite que en la sentencia se defina una variable. 
+		var es una palabra clave(keyword): no pueden ser utilizadas como nombres de variables.*/
+		
+		console.log(almacena) /*Para ver el resultado de evaluar algo o el contenido de una variable 
+						en la consola del navegador*/
+		
+		/*TIPOS DE DATOS
+		Numeros(numbers): enteros, flotantes*/
+		var entero = 7;
+		console.log("Valor del tipo entero: " + entero);
+		// El resultado de utilizar el operador + entre una cadena y un numero = concatenar
+		
+		var flotante = 10.5;
+		console.log("El valor del numero flotante es : "+flotante);
+		
+		//CADENAS DE TEXTO(string): van entre " " o ' '
+		var caracteres = "<fesrfq3rfrgre5y-.+";
+		console.log("Valor del tipo string: "+caracteres);
+		var numString1 = "10";
+		var numString2 = "20";
+		console.log("Concatena: "+numString1+numString2);
+		
+		//BOOLEANOS(bool): Solo pueden contener uno de dos valores verdadero o falso(True o False) (1 y 0)
+		var boolFalse = false;
+		var boolTrue = true;
+		console.log("Valor del tipo booleano: "+boolFalse);
+		console.log("Valor del tipo booleano: "+boolTrue);
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Control de flujo</title>
+</head>
+<body>
+	<script>
+		/*Control de flujo: ciclos
+		Creando ciclos while, do while y for*/
+		
+		/*Bucle while(mientras): La condicion entre parentesis
+			sea true, las declaraciones dentro del bucle
+			se seguiran ejecutando*/
+		/*var num = 0; //inicia el ciclo
+		while(num<=100){ //evaluacion
+			console.log(num);
+			num=num+2; //fin de ciclo
+		}*/
+		
+		/*Con el ciclo whiele era posible
+		que la condicion no se cumpliera ni una vez, 
+		pero con el ciclo do-while primero se ejecuta 
+		el ciclo y despues se evalua una condicion*/
+		/*var pago=0;
+		var totalPago=0;
+		do{
+			pago=Number(prompt("De cuanto es tu pago? (0 para terminar el ciclo): "));
+			totalPago=totalPago+pago;
+		}while(pago);
+		alert("Solo me haz pagado: "+totalPago);*/
+		
+		for(var num=0;num<=100;num=num+2){
+			console.log(num);
+		}
+		
+		
+	</script>
+</body>
+</html>

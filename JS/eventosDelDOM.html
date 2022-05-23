@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Eventos del DOM</title>
+</head>
+<body>
+	<button id="boton">Boton</button>
+	
+	<!--a id="boton" href="http://www.youtube.com">YouTube</a>-->
+	
+	<input type="text" id="input">
+	<script>
+		(function(){ //funcion autoinvocada
+			var saludo=function(e){
+				//alert("Saludo");
+				//console.log("Este evento es de tipo: "+e.type);
+				console.log("El evento se esta aplicando: "+e.target);
+				
+				/*console.log("Bien");
+				e.preventDefault(); //previene el salto a otra pagina*/
+				
+			};
+			
+			/*var saludo2=function(){
+				//alert("Saludo");
+				console.log("Saludo2!");
+			};*/
+			
+			var boton=document.getElementById("boton");
+			boton.addEventListener("click", saludo); //tiene 2 parametros tipo de evento que queremos pasar y una funcion anonima [(function(){})].
+			//boton.addEventListener("click",saludo2);
+			//boton.removeEventListener("click",saludo);
+
+			
+			/*var input=document.getElementById("input");
+			input.addEventListener("focus", saludo);*/
+			
+		}())
+	</script>
+</body>
+</html>

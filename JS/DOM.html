@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Document Object Model</title>
+	
+</head>
+<body>
+	<h1 id="Titulo">Introduccion al DOM</h1>
+	<div id="Subtitulo"></div>
+	<p>1.- Introduccion al <b>DOM</b> Document object model.</p>
+	<p id="Segundo">2.- Cada uno de estos elementos son nodos que podemos acceder en el DOM Document object model.</p>
+	<p>3.- Para acceder al DOM Document object model seleccionando todos lo elementos mediante etiquetas. Otra forma de seleccionar los elementos, es seleccionar mediante los ID.</p>
+	<script>	
+		var elementosP=document.getElementsByTagName("p"); //acceder a todos los elementos "p"
+		var segundoParrafo = document.getElementById("Segundo"); //acceder a todos los elementos mediante ID
+		
+		//NUEVO NODO
+		//Pasos:
+		//1. Crear el elemento.
+		var elemento = document.createElement("h2");
+		//2. Crear un nodo de texto.
+		var contenido = document.createTextNode("Este es un subtitulo");
+		//3. Añadir el nodo de texto al elemento.
+		elemento.appendChild(contenido);
+		//4. Agregar atributos al elemento.
+		elemento.setAttribute("align","center");
+		//5. Agregar el elemento al documento.
+		//document.getElementById("Subtitulo").appendChild(elemento);
+		document.body.appendChild(elemento);
+		
+	</script>
+</body>
+</html>

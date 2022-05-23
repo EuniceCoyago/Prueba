@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Operadores</title>
+	<script>
+		/*OPERADORES ARITMETICOS
+		SUMA: +
+		RESTA: -
+		MULTIPLICACION: *
+		DIVISION: /
+		RESIDUO: %		
+		*/
+		var num1=16, num2=14, cadena="101010";
+		console.log("OPERADORES ARITMETICOS");
+		console.log("SUMA ENTRE 16 Y 14: "+(num1+num2));
+		console.log("RESTA ENTRE 16 Y 14: "+(num1-num2));
+		console.log("MULTIPLICACION ENTRE 16 Y 14: "+(num1*num2));
+		console.log("DIVISION ENTRE 16 Y 14: "+(num1/num2));
+		console.log("RESIDUO ENTRE 16 Y 14: "+(num1%num2));
+		
+		console.log("CONCATENA NUM1 CON CADENA: "+(num1+cadena));
+		console.log("CONCATENA CADENA CON CADENA: "+(cadena+cadena));
+		
+		/*OPERADOR UNARIO: NO son simbolos, son palabras
+		typeof: Muestra una cadena con el tipo de dato que le demos. */
+		console.log("OPERADOR UNARIO");
+		console.log("Tipo de dato num1=16: "+(typeof num1)); //number
+		console.log("Tipo de dato cadena=101010: "+(typeof cadena)); //string
+		console.log("Tipo de dato true: "+(typeof true)); //boolean
+		
+		/*OPERADORES DE COMPARACION: Retornan valores booleanos (true o false).
+			Exactamente igual que: ===
+			Distinto que !==
+			Menor que: <
+			Mayor que: >
+			Menor o igual que: <=
+			Mayor o igual que: >=		*/
+		console.log("OPERADORES DE COMPARACION");
+		console.log(num1 === num2); //false
+		console.log(num1 !== num2); //true
+		console.log(num1 < num2); //false
+		console.log(num1 > num2); //true
+		console.log(num1 <= num2); //false
+		console.log(num1 >= num2); //true
+		console.log(10 >= 10); //true
+		
+		/*OPERADORES LOGICOS: Permiten realizar comparaciones mas complejas.
+			AND(y): && Devuelve true solo cuando ambos valores son true.
+			OR(o): || Devuelve true si cualquiera de los valores es true.
+			NOT(no): ! Invierte el valor, true produce false y false un true. */
+		console.log("OPERADORES LOGICOS");
+		console.log("OPERADOR AND &&");
+		console.log(false && true); //false
+		console.log(false && false); //false
+		console.log(true && true); //true
+		console.log((num1<num2)&&(num1>num2)); //false
+		
+		console.log("OPERADOR OR ||");
+		console.log(false || true); //true
+		console.log(false || false); //false
+		console.log(true || true); //true
+		console.log((num1<num2)||(num1>num2)); //true
+		
+		console.log("OPERADOR NOT !");
+		console.log(!(num1>num2)); //false
+		console.log(!(num2>num1)); //true
+		
+		
+		/* OPERADOR TERNARIO: Opera sobre tres valores
+		cuando es true se elige el valor medio
+		cuando es false se elige el de la derecha */
+		console.log("OPERADOR TERNARIO");
+		console.log(true ?2:1); //2
+		console.log(false ?2:1); //1
+
+	</script>
+</head>
+<body>
+</body>
+</html>

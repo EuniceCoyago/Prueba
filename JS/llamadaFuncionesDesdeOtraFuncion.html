@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Llamar a funciones desde otra funcion</title>
+	
+</head>
+<body>
+	<script>
+		function uno(){
+			document.write("Aqui se encuentra la funcion numero 1");
+		};
+		
+		function dos(){
+			document.write("Llamando a la funcion 1: ");
+		};
+		
+		function telefono(){
+			dos();
+			uno();
+			
+		};
+		
+		telefono();
+		
+	</script>
+</body>
+</html>
